@@ -9,23 +9,36 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f9f9f9;
         }
         header {
             background-color: #333;
             color: #fff;
             padding: 20px;
             text-align: center;
+            margin-bottom: 20px;
         }
         section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
             padding: 20px;
         }
-        .emprendedor {
-            margin-bottom: 20px;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 20px;
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: calc(33.33% - 20px);
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: left;
         }
-        h2 {
-            color: #333;
+        .card h2 {
+            margin-top: 0;
+        }
+        .card p {
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -34,31 +47,56 @@
         <h1>Emprendedores y Empresas de Tecnología</h1>
     </header>
     <section>
-        <h2>Emprendedores del área de tecnología</h2>
-        <div class="emprendedor">
-            <h3>Nombre del Emprendedor 1</h3>
+        <div class="card">
+            <h2>Emprendedor 1</h2>
             <p>Biografía del Emprendedor...</p>
             <p>Empresa(s) a cargo: Empresa A, Empresa B</p>
+            <p>Servicio(s) ofrecido(s): Descripción del servicio...</p>
+        </div>
+        <div class="card">
+            <h2>Emprendedor 2</h2>
+            <p>Biografía del Emprendedor...</p>
+            <p>Empresa(s) a cargo: Empresa C</p>
             <p>Servicio(s) ofrecido(s): Descripción del servicio...</p>
         </div>
         <!-- Repite esta estructura para los demás emprendedores -->
     </section>
     <section>
-        <h2>Empresas de Software de El Salvador</h2>
-        <!-- Incluye información sobre las empresas de software de El Salvador -->
+        <div class="card">
+            <h2>Empresa de Software de El Salvador 1</h2>
+            <p>Descripción de la empresa...</p>
+            <p>Servicio(s) ofrecido(s): Descripción del servicio...</p>
+        </div>
+        <div class="card">
+            <h2>Empresa de Software de El Salvador 2</h2>
+            <p>Descripción de la empresa...</p>
+            <p>Servicio(s) ofrecido(s): Descripción del servicio...</p>
+        </div>
+        <!-- Repite esta estructura para las demás empresas de El Salvador -->
     </section>
     <section>
-        <h2>Empresas de Software Internacionales</h2>
-        <!-- Incluye información sobre las empresas de software internacionales -->
+        <div class="card">
+            <h2>Empresa de Software Internacional 1</h2>
+            <p>Descripción de la empresa...</p>
+            <p>Servicio(s) ofrecido(s): Descripción del servicio...</p>
+        </div>
+        <div class="card">
+            <h2>Empresa de Software Internacional 2</h2>
+            <p>Descripción de la empresa...</p>
+            <p>Servicio(s) ofrecido(s): Descripción del servicio...</p>
+        </div>
+        <!-- Repite esta estructura para las demás empresas internacionales -->
     </section>
     <section>
-        <h2>Software Elegido</h2>
-        <p>Rubro: Descripción del rubro al que pertenece el software</p>
-        <p>Descripción: Breve descripción del software</p>
-        <!-- Aquí puedes incluir el código para insertar el DEMO del software -->
+        <div class="card">
+            <h2>Software Elegido</h2>
+            <p>Rubro: Descripción del rubro al que pertenece el software</p>
+            <p>Descripción: Breve descripción del software</p>
+            <!-- Aquí puedes incluir el código para insertar el DEMO del software -->
+        </div>
     </section>
-    <footer>
-        <!-- Puedes agregar un pie de página con información adicional -->
-    </footer>
 </body>
 </html>
+
+
+
